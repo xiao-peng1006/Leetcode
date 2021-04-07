@@ -33,7 +33,7 @@ class Solution {
         swap(nums, pivot_index, right);
         int store_index = left;
 
-        for (int i = left; i <= right; i++) {
+        for (int i = left; i < right; i++) {
             if (nums[i] < pivot) {
                 swap(nums, i, store_index++);
             }
